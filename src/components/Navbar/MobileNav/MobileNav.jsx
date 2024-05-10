@@ -1,4 +1,4 @@
-import { RxCross2 } from 'react-icons/rx';
+// import { RxCross2 } from 'react-icons/rx';
 import './MobileNav.css';
 
 const MobileNav = ({ isOpen, toggleMenu }) => {
@@ -44,21 +44,24 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
                 Contact Me
               </a>
             </li>
-            <button
+            <li>
+              <div
+                onClick={toggleMenu}
+                className='menu-item'
+              >
+                Closs
+              </div>
+            </li>
+            {/* <button
               className='contact-btn'
               onClick={() => {}}
             >
               Button
-            </button>
+            </button> */}
           </ul>
-          <button
-            className='menu-btn'
-            onClick={toggleMenu}
-          >
-            <span style={{ fontSize: '1.8rem' }}>
-              <RxCross2 style={{ fontSize: '1.8rem' }} />
-            </span>
-          </button>
+          {/* <div className='closs-btn'>
+            <div onClick={toggleMenu}>closs</div>
+          </div> */}
         </div>
       </div>
     </>

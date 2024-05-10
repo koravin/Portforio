@@ -1,23 +1,26 @@
+// Import necessary dependencies
 import { useState } from 'react';
 import './Navbar.css';
 import { IoListOutline } from 'react-icons/io5';
 import MobileNav from './MobileNav/MobileNav';
 
 const Navbar = () => {
+  // Define state for menu visibility
   const [openMenu, setOpenMenu] = useState(false);
 
-  console.log('openMenu', openMenu);
-
+  // Toggle menu function
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
 
   return (
     <>
+      {/* Pass state and toggle function to MobileNav */}
       <MobileNav
         isOpen={openMenu}
         toggleMenu={toggleMenu}
       />
+      {/* Navbar */}
       <nav className='nav-wrapper'>
         <div className='nav-content'>
           <img
@@ -66,14 +69,17 @@ const Navbar = () => {
             </button>
           </ul>
 
-          <button
-            className='menu-btn'
-            onClick={toggleMenu}
-          >
-            <span style={{ fontSize: '1.8rem' }}>
-              <IoListOutline style={{ fontSize: '1.8rem' }} />
-            </span>
-          </button>
+          {/* Button to toggle menu */}
+          {!openMenu && (
+            <button
+              className='menu-btn'
+              onClick={toggleMenu}
+            >
+              <span style={{ fontSize: '1.8rem' }}>
+                <IoListOutline style={{ fontSize: '1.8rem' }} />
+              </span>
+            </button>
+          )}
         </div>
       </nav>
     </>
