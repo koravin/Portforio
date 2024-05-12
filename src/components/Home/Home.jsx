@@ -15,12 +15,12 @@ const Home = () => {
       <div className='home-img'>
         {/* react-icon + profile */}
         <div>
-          <div className='tech-icon'>
+          {/* <div className='tech-icon'>
             <img
               src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
               alt=''
             />
-          </div>
+          </div> */}
           {/* profile */}
           <img
             src='https://i.redd.it/xcsd2xaey5ob1.jpg'
@@ -47,6 +47,13 @@ const Home = () => {
           <div className='tech-icon'>
             <img
               src='https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png'
+              alt=''
+            />
+          </div>
+
+          <div className='tech-icon'>
+            <img
+              src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
               alt=''
             />
           </div>

@@ -1,13 +1,13 @@
-export const SKILLS = [
+export const data = [
   {
     title: 'Frontend',
     icon: 'https://static.thenounproject.com/png/487779-200.png',
-    skills: [{ skill: 'HTML5' }, { skill: 'CSS3' }, { skill: 'JavaScript' }, { skill: 'React.js' }, { skill: 'golang' }],
+    skills: [{ skill: 'HTML5' }, { skill: 'CSS3' }, { skill: 'JavaScript' }, { skill: 'React.js' }],
   },
   {
     title: 'Backend',
     icon: 'https://png.pngtree.com/png-vector/20230304/ourmid/pngtree-back-end-developer-line-icon-vector-png-image_6631175.png',
-    skills: [{ skill: 'Node.js' }, { skill: 'Express.js' }],
+    skills: [{ skill: 'Node.js' }, { skill: 'Express.js' }, { skill: 'golang' }],
   },
   {
     title: 'Tools',
