@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <section className='home-container'>
         <div className='home-content'>
-          <h2>Hi👋 I'm Koravin Innanchai</h2>
+          <h2>Hi👋👋 I'm Koravin Innanchai</h2>
           <p>
             I am a recent graduate in Computer Engineering, characterized by strong responsibility and an insatiable appetite for
             learning.I am committed to contributing my efforts and leveraging my talents to propel your company towards success.
