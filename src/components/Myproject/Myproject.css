@@ -1,0 +1,174 @@
+.my_project_head {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.project_container {
+    display: grid;
+    place-content: center;
+    margin-inline: 1.5rem;
+    padding-block: 3.5rem;
+}
+
+.card_container {
+    display: grid;
+    row-gap: 3.5rem;
+}
+
+.card_article {
+    position: relative;
+    overflow: hidden;
+}
+
+.card_img {
+    width: 328px;
+    border-radius: 1.5rem;
+    border: 2px solid #7c66e3; 
+    padding: 5px;
+    transition: transform 0.2s ease; 
+}
+
+
+
+.card_data {
+    width: 280px;
+    color: #000;
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    transition: opacity 1s 1s;
+}
+
+.card_description {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.card_title {
+    font-weight: 500;
+    margin-bottom: .75rem;
+}
+
+.card_button {
+    text-decoration: none;
+    font-weight: 200;
+    color: #9e9e9e;
+}
+
+.card_button:hover {
+    text-decoration: underline;
+}
+
+.card_article:hover .card_data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card_article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card_article:not(:hover) {
+    animation: show-overflow 1s forwards;
+}
+
+.card_article:not(:hover) .card_data{
+    animation: remove-data 2s forwards;
+}
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+    50% {
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .card_img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .project_container {
+       margin-inline: 1rem;
+    }
+
+    .card_data {
+        width: 250px;
+        padding: 1rem;
+    }
+
+    .card_img {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+   .card_container {
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1.5rem;
+   }
+}
+
+@media screen and (min-width: 1120px) {
+    .card_container {
+     grid-template-columns: repeat(3,1fr);
+     column-gap: 1.5rem;
+    }
+
+    .card_img {
+        width: 348px;
+        height: 372px;
+    }
+
+    .card_data {
+        width: 316px;
+        padding-inline: 2.5rem;
+    }
+ }

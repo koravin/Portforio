@@ -38,6 +38,15 @@
     margin-left: -2rem;
 }
 
+.logo-mobile {
+    width: 12rem;
+    height: auto;
+    font-family: "Yellowtail", cursive;
+    font-weight: 900;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
 
 @media (max-width: 769px) {
     .mobile-menu {

@@ -23,11 +23,12 @@ const Navbar = () => {
       {/* Navbar */}
       <nav className='nav-wrapper'>
         <div className='nav-content'>
-          <img
+          {/* <img
             src='https://portfoliocollection.com/wp-content/uploads/2022/03/Untitled_design_35_-removebg-preview.png'
             alt=''
             className='logo'
-          />
+          /> */}
+          <h3 className='logo'>My portfolio</h3>
           <ul className='jongrai'>
             <li>
               <a
@@ -61,12 +62,12 @@ const Navbar = () => {
                 Contact Me
               </a>
             </li>
-            <button
+            {/* <button
               className='contact-btn'
               onClick={() => {}}
             >
               Button
-            </button>
+            </button> */}
           </ul>
 
           {/* Button to toggle menu */}

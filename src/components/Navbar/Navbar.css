@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
 .nav-wrapper {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 0.5rem 0;
@@ -19,6 +21,9 @@
 .logo {
     width: 12rem;
     height: auto;
+    font-family: "Yellowtail", cursive;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .nav-content ul {

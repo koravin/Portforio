@@ -19,27 +19,29 @@ const Skills = () => {
 
   return (
     <section className='skills-container'>
-      <h5>Technical Proficiency</h5>
-      <div className='skill-content'>
-        <div className='skills'>
-          {data.map((item) => {
-            return (
-              <SkillCard
-                key={item.title}
-                iconUrl={item.icon}
-                title={item.title}
-                isActive={selectedSkill.title === item.title}
-                onClick={() => handleSelectSkill(item)}
-              />
-            );
-          })}
-        </div>
+      <div>
+        <h5 className='header_skills'>Technical Proficiency</h5>
+        <div className='skill-content'>
+          <div className='skills'>
+            {data.map((item) => {
+              return (
+                <SkillCard
+                  key={item.title}
+                  iconUrl={item.icon}
+                  title={item.title}
+                  isActive={selectedSkill.title === item.title}
+                  onClick={() => handleSelectSkill(item)}
+                />
+              );
+            })}
+          </div>
 
-        <div className='skill-info'>
-          <SkillsinfoCard
-            heading={selectedSkill.title}
-            skills={selectedSkill.skills}
-          />
+          <div className='skill-info'>
+            <SkillsinfoCard
+              heading={selectedSkill.title}
+              skills={selectedSkill.skills}
+            />
+          </div>
         </div>
       </div>
     </section>

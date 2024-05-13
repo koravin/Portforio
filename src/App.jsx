@@ -4,6 +4,9 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Skills from './components/Skills/Skills';
+import Myproject from './components/Myproject/Myproject';
+import ContactMe from './components/Contactme/ContactMe';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -11,10 +14,11 @@ function App() {
       <Navbar />
       <div className='container'>
         <Home />
-      </div>
-      <div className='container'>
         <Skills />
+        <Myproject />
+        <ContactMe />
       </div>
+      <Footer />
     </>
   );
 }

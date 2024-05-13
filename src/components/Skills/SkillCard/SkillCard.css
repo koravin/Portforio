@@ -34,7 +34,7 @@
     
 }
 
-.skill-icon img {
+.skill-icon-img {
     width: 2.4rem;
     height: auto;
     object-fit: contain;
@@ -60,7 +60,7 @@
 
 }
 
-@media (main-width: 768px) {
+@media (main-width: 750px) {
     .skills-card span {
         font-size: 0.9rem;
     }

@@ -1,9 +1,12 @@
 .skills-container {
     margin: 4rem 0;
     position: relative;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
 }
 
-.skills-container h5 {
+.header_skills {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 3.5rem;

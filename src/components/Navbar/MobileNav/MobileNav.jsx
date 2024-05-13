@@ -6,11 +6,13 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
     <>
       <div className={`mobile-menu ${isOpen ? 'active' : ''}`}>
         <div className='mobile-menu-container'>
-          <img
+          {/* <img
             src='https://portfoliocollection.com/wp-content/uploads/2022/03/Untitled_design_35_-removebg-preview.png'
             alt=''
             className='logo'
-          />
+          /> */}
+          <h3 className='logo-mobile'>My portfolio</h3>
+          <hr className='line-space' />
           <ul>
             <li>
               <a
