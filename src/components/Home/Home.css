@@ -62,7 +62,7 @@
 .home-img > div > img {
     width: 25rem;
     transition: all 0.3s ease;
-    border-radius: 2.5rem;
+    border-radius: 10rem;
 }
 
 .tech-icon {
@@ -85,6 +85,50 @@
     transform: translateY(-0.5rem)
 }
 
+.Resume_download {
+    margin-top: 2rem;
+}
+
+
+.resume-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #7c66e3; 
+    color: #fff;
+    border: 2px solid #7c66e3; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    font-family: 'Comic Sans MS', cursive; 
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .resume-button:hover {
+    background-color: #6852ba; 
+    border-color: #6852ba; 
+    transform: scale(1.1) translateZ(10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  }
+  
+  /* @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .image_profile {
+    animation: floating 3s ease infinite;
+  } */
+  
+  
 @media (max-width: 1025px) {
     .home-content h2{
         font-size: 3rem;
@@ -145,6 +189,11 @@
     .home-container::before {
         bottom: 2rem;
         right: 0rem;
+    }
+
+    .Resume_download {
+        display: flex;
+        justify-content: center;
     }
 
 }

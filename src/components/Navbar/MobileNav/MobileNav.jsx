@@ -1,5 +1,6 @@
 // import { RxCross2 } from 'react-icons/rx';
 import './MobileNav.css';
+import { Link } from 'react-scroll';
 
 const MobileNav = ({ isOpen, toggleMenu }) => {
   return (
@@ -15,36 +16,56 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
           <hr className='line-space' />
           <ul>
             <li>
-              <a
-                href='#'
+              <Link
+                activeClass='active'
+                to='home'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 className='menu-item'
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='#'
+              <Link
+                activeClass='active'
+                to='skill'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 className='menu-item'
               >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='#'
+              <Link
+                activeClass='active'
+                to='project'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 className='menu-item'
               >
                 Project
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href='#'
+              <Link
+                activeClass='active'
+                to='contact'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 className='menu-item'
               >
                 Contact Me
-              </a>
+              </Link>
             </li>
             <li>
               <div

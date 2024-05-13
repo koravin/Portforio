@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Navbar.css';
 import { IoListOutline } from 'react-icons/io5';
 import MobileNav from './MobileNav/MobileNav';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   // Define state for menu visibility
@@ -29,38 +30,58 @@ const Navbar = () => {
             className='logo'
           /> */}
           <h3 className='logo'>My portfolio</h3>
-          <ul className='jongrai'>
+          <ul>
             <li>
-              <a
-                href=''
+              <Link
+                activeClass='active'
+                to='home'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 className='menu-item'
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href=''
+              <Link
+                activeClass='active'
+                to='skill'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 className='menu-item'
               >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href=''
+              <Link
+                activeClass='active'
+                to='project'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 className='menu-item'
               >
                 Project
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href=''
+              <Link
+                activeClass='active'
+                to='contact'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
                 className='menu-item'
               >
                 Contact Me
-              </a>
+              </Link>
             </li>
             {/* <button
               className='contact-btn'

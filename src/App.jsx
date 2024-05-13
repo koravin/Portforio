@@ -13,10 +13,18 @@ function App() {
     <>
       <Navbar />
       <div className='container'>
-        <Home />
-        <Skills />
-        <Myproject />
-        <ContactMe />
+        <div id='home'>
+          <Home />
+        </div>
+        <div id='skill'>
+          <Skills />
+        </div>
+        <div id='project'>
+          <Myproject />
+        </div>
+        <div id='contact'>
+          <ContactMe />
+        </div>
       </div>
       <Footer />
     </>

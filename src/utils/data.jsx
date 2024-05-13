@@ -18,7 +18,7 @@ export const data = [
   {
     title: 'Tools',
     icon: <FaTools className='skill-icon-img' />,
-    skills: [{ skill: 'github' }, { skill: 'Visual Studio Code' }],
+    skills: [{ skill: 'github' }, { skill: 'Visual Studio Code' }, { skill: 'Postman' }, { skill: 'Moqups' }, { skill: 'Figma' }],
   },
   {
     title: 'Soft Skills',
